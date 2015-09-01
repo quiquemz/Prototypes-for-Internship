@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+// HEADER ELEMENTS
+.header-container{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-box {
+  background-color: white;
+  height: 75px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+}
+
+.header-left-box {
+  float: left;
+  width: 50%;
+}
+
+.header-right-box {
+  float: right;
+  width: 50%;
+}
+
+.main-logo {
+  height: 25px;
+}
+
+#hot-link {
+  color: black;
+  font-size: 20px;
+}
+
+// MAIN CONTENT
+.home-container {
+  width: 100%;
+  z-index: 0;
+}
+
+// - First Box (Main)
+.home-box {
+  background: linear-gradient(to left, rgb(0, 200, 230), rgb(0, 150, 255));
+  margin: 0 auto;
+}
+
+.img-box {
+  margin: 10px auto;
+  max-width: 50%;
+}
+
+// - Second Box (Crew)
+.crew-box {
+  padding: 50px 0;
+  margin: 0 auto;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.crew-table {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.table-column{
+  padding: 10px;
+}
+
+//WHAT'S HOT
+#whats-hot-container {
+  width: 100%;
+  position: fixed;
+}
+
+//What's hot Header
+.whats-hot-header {
+  background-color: white;
+  padding: 20px 10px;
+  position: relative;
+
+}
+.hot-header-menu{
+  font-size: x-large;
+  vertical-align: middle;
+}
+
+a.exit-link {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+}
+
+//What's hot Content
+.whats-hot-box {
+  height: 100vh;
+  padding-top: 130px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  background-color: rgba(220, 0, 50, 0.80);
+  position: relative;
+}
+
+.center-hot-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+img.example {
+  margin: 0 auto;
+  max-width: 80%;
+  box-shadow: black 1px 1px 10px;
+}
+
+// --> GENERAL COMPONENTS <-- //
+//Diagonals
+.diagonal-box {
+  margin: 0 auto;
+  width: 75vw;
+  height: 100vh;
+  background: linear-gradient(to left, rgb(0, 200, 230), rgb(0, 150, 255));
+  opacity: 0.5;
+  transform: skew(-20deg);
+  overflow: hidden;
+}
+
+
+//Titles
+.title-box {
+  margin: 30px auto;
+  width: 90%;
+  text-align: center;
+
+  .title--crew{
+    padding: 10px 0 20px 0;
+  }
+}
