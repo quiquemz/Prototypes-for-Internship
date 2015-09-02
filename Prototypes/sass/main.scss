@@ -67,11 +67,11 @@
   max-width: 50%;
 }
 
-//Diagonal with logo and text
+// -- Diagonal with logo and text
 .diagonal-box {
   margin: 0 auto;
   width: 70vw;
-  height: 800px;
+  height: 1000px;
   background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
   transform: skew(-20deg);
   overflow: hidden;
@@ -82,6 +82,10 @@
   position: relative;
   top: 20%;
   left: 5%;
+
+  img {
+      max-width: 800px;
+  }
 }
 
 .audi-logo-img {
@@ -91,7 +95,7 @@
 .audi-logo-text {
   color: white;
   font-weight: lighter;
-  font-size: x-large;
+  font-size: 40px;
 }
 
 // - Second Box (Crew)
@@ -108,6 +112,49 @@
 
 .table-column{
   padding: 10px;
+}
+
+// -- Titles
+.title-box {
+  margin: 30px auto;
+  width: 90%;
+  text-align: center;
+
+  .title--crew{
+    padding: 10px 0 20px 0;
+  }
+}
+
+// -- Extras
+.back-to-top {
+  width: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 3.5%;
+  opacity: 0.5;
+  animation: backToTop 0.5s infinite;
+  animation-play-state: paused;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+@keyframes backToTop {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+.back-to-top-img {
+  width: 50px;
 }
 
 //WHAT'S HOT
@@ -152,15 +199,4 @@ a.exit-link {
   top: 40%;
   left: 50%;
   transform: translate(-40%, -50%);
-}
-
-//Titles
-.title-box {
-  margin: 30px auto;
-  width: 90%;
-  text-align: center;
-
-  .title--crew{
-    padding: 10px 0 20px 0;
-  }
 }

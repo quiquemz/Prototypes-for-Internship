@@ -54,7 +54,7 @@
 .diagonal-box {
   margin: 0 auto;
   width: 70vw;
-  height: 800px;
+  height: 1000px;
   background: -webkit-linear-gradient(bottom left, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
   background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
   -webkit-transform: skew(-20deg);
@@ -69,6 +69,8 @@
   position: relative;
   top: 20%;
   left: 5%; }
+  .audi-logo-box img {
+    max-width: 800px; }
 
 .audi-logo-img {
   width: 80%; }
@@ -76,7 +78,7 @@
 .audi-logo-text {
   color: white;
   font-weight: lighter;
-  font-size: x-large; }
+  font-size: 40px; }
 
 .crew-box {
   padding: 50px 0;
@@ -90,6 +92,48 @@
 
 .table-column {
   padding: 10px; }
+
+.title-box {
+  margin: 30px auto;
+  width: 90%;
+  text-align: center; }
+  .title-box .title--crew {
+    padding: 10px 0 20px 0; }
+
+.back-to-top {
+  width: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 3.5%;
+  opacity: 0.5;
+  -webkit-animation: backToTop 0.5s infinite;
+          animation: backToTop 0.5s infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
+
+.back-to-top:hover {
+  opacity: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+
+@-webkit-keyframes backToTop {
+  0% {
+    bottom: 50px; }
+  50% {
+    bottom: 60px; }
+  100% {
+    bottom: 50px; } }
+
+@keyframes backToTop {
+  0% {
+    bottom: 50px; }
+  50% {
+    bottom: 60px; }
+  100% {
+    bottom: 50px; } }
+
+.back-to-top-img {
+  width: 50px; }
 
 #whats-hot-container {
   width: 100%;
@@ -124,10 +168,3 @@ a.exit-link {
   -webkit-transform: translate(-40%, -50%);
       -ms-transform: translate(-40%, -50%);
           transform: translate(-40%, -50%); }
-
-.title-box {
-  margin: 30px auto;
-  width: 90%;
-  text-align: center; }
-  .title-box .title--crew {
-    padding: 10px 0 20px 0; }
