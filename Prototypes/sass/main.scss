@@ -52,7 +52,9 @@
 
 // - First Box (Main)
 .home-box {
-  background: linear-gradient(to left, rgb(0, 200, 230), rgb(0, 150, 255));
+  background-image: url("http://www.porsche-mania.com/wp-content/uploads/2011/04/2011-Black-Porsche-911-Targa-4S_Wallpaper_004.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 0 auto;
 }
 
@@ -129,10 +131,10 @@ img.example {
 //Diagonals
 .diagonal-box {
   margin: 0 auto;
-  width: 75vw;
-  height: 100vh;
-  background: linear-gradient(to left, rgb(0, 200, 230), rgb(0, 150, 255));
-  opacity: 0.5;
+  width: 70vw;
+  height: 800px;
+  background: linear-gradient(to top right, rgb(255, 230, 0), rgb(255, 200, 50));
+  opacity: 0.2;
   transform: skew(-20deg);
   overflow: hidden;
 }

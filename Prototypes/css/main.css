@@ -40,8 +40,9 @@
   z-index: 0; }
 
 .home-box {
-  background: -webkit-linear-gradient(right, #00c8e6, #0096ff);
-  background: linear-gradient(to left, #00c8e6, #0096ff);
+  background-image: url("http://www.porsche-mania.com/wp-content/uploads/2011/04/2011-Black-Porsche-911-Targa-4S_Wallpaper_004.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 0 auto; }
 
 .img-box {
@@ -103,11 +104,11 @@ img.example {
 
 .diagonal-box {
   margin: 0 auto;
-  width: 75vw;
-  height: 100vh;
-  background: -webkit-linear-gradient(right, #00c8e6, #0096ff);
-  background: linear-gradient(to left, #00c8e6, #0096ff);
-  opacity: 0.5;
+  width: 70vw;
+  height: 800px;
+  background: -webkit-linear-gradient(bottom left, #ffe600, #ffc832);
+  background: linear-gradient(to top right, #ffe600, #ffc832);
+  opacity: 0.2;
   -webkit-transform: skew(-20deg);
       -ms-transform: skew(-20deg);
           transform: skew(-20deg);
