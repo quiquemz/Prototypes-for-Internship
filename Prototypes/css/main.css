@@ -26,21 +26,23 @@
 
 .header-right-box {
   float: right;
-  width: 50%; }
+  width: 50%;
+  margin-top: 5px; }
 
 .main-logo {
   height: 25px; }
 
 #hot-link {
   color: black;
-  font-size: 20px; }
+  font-size: 15px;
+  font-weight: 200; }
 
 .home-container {
   width: 100%;
   z-index: 0; }
 
 .home-box {
-  background-image: url("http://www.porsche-mania.com/wp-content/uploads/2011/04/2011-Black-Porsche-911-Targa-4S_Wallpaper_004.jpg");
+  background-image: url("http://www.hdwallpapers.in/walls/2014_porsche_911_turbo_by_techart-wide.jpg");
   background-position: center;
   background-size: cover;
   margin: 0 auto; }
@@ -48,6 +50,33 @@
 .img-box {
   margin: 10px auto;
   max-width: 50%; }
+
+.diagonal-box {
+  margin: 0 auto;
+  width: 70vw;
+  height: 800px;
+  background: -webkit-linear-gradient(bottom left, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
+  background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+  overflow: hidden; }
+
+.audi-logo-box {
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+  position: relative;
+  top: 20%;
+  left: 5%; }
+
+.audi-logo-img {
+  width: 80%; }
+
+.audi-logo-text {
+  color: white;
+  font-weight: lighter;
+  font-size: x-large; }
 
 .crew-box {
   padding: 50px 0;
@@ -69,11 +98,10 @@
 .whats-hot-header {
   background-color: white;
   padding: 20px 10px;
-  position: relative; }
-
-.hot-header-menu {
-  font-size: x-large;
-  vertical-align: middle; }
+  position: relative;
+  font-size: 40px;
+  vertical-align: middle;
+  font-weight: 100; }
 
 a.exit-link {
   position: absolute;
@@ -86,7 +114,7 @@ a.exit-link {
   margin: 0 auto;
   color: white;
   text-align: center;
-  background-color: rgba(220, 0, 50, 0.8);
+  background-color: rgba(220, 0, 50, 0.9);
   position: relative; }
 
 .center-hot-box {
@@ -96,23 +124,6 @@ a.exit-link {
   -webkit-transform: translate(-40%, -50%);
       -ms-transform: translate(-40%, -50%);
           transform: translate(-40%, -50%); }
-
-img.example {
-  margin: 0 auto;
-  max-width: 80%;
-  box-shadow: black 1px 1px 10px; }
-
-.diagonal-box {
-  margin: 0 auto;
-  width: 70vw;
-  height: 800px;
-  background: -webkit-linear-gradient(bottom left, #ffe600, #ffc832);
-  background: linear-gradient(to top right, #ffe600, #ffc832);
-  opacity: 0.2;
-  -webkit-transform: skew(-20deg);
-      -ms-transform: skew(-20deg);
-          transform: skew(-20deg);
-  overflow: hidden; }
 
 .title-box {
   margin: 30px auto;

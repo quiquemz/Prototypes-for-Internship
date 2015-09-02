@@ -33,15 +33,19 @@
 .header-right-box {
   float: right;
   width: 50%;
+  margin-top: 5px;
 }
 
 .main-logo {
   height: 25px;
 }
 
+
 #hot-link {
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 200;
+
 }
 
 // MAIN CONTENT
@@ -52,7 +56,7 @@
 
 // - First Box (Main)
 .home-box {
-  background-image: url("http://www.porsche-mania.com/wp-content/uploads/2011/04/2011-Black-Porsche-911-Targa-4S_Wallpaper_004.jpg");
+  background-image: url("http://www.hdwallpapers.in/walls/2014_porsche_911_turbo_by_techart-wide.jpg");
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -61,6 +65,33 @@
 .img-box {
   margin: 10px auto;
   max-width: 50%;
+}
+
+//Diagonal with logo and text
+.diagonal-box {
+  margin: 0 auto;
+  width: 70vw;
+  height: 800px;
+  background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
+  transform: skew(-20deg);
+  overflow: hidden;
+}
+
+.audi-logo-box {
+  transform: skew(20deg);
+  position: relative;
+  top: 20%;
+  left: 5%;
+}
+
+.audi-logo-img {
+  width: 80%;
+}
+
+.audi-logo-text {
+  color: white;
+  font-weight: lighter;
+  font-size: x-large;
 }
 
 // - Second Box (Crew)
@@ -90,11 +121,13 @@
   background-color: white;
   padding: 20px 10px;
   position: relative;
+  font-size: 40px;
+  vertical-align: middle;
+  font-weight: 100;
 
 }
 .hot-header-menu{
-  font-size: x-large;
-  vertical-align: middle;
+
 }
 
 a.exit-link {
@@ -110,7 +143,7 @@ a.exit-link {
   margin: 0 auto;
   color: white;
   text-align: center;
-  background-color: rgba(220, 0, 50, 0.80);
+  background-color: rgba(220, 0, 50, 0.90);
   position: relative;
 }
 
@@ -120,25 +153,6 @@ a.exit-link {
   left: 50%;
   transform: translate(-40%, -50%);
 }
-
-img.example {
-  margin: 0 auto;
-  max-width: 80%;
-  box-shadow: black 1px 1px 10px;
-}
-
-// --> GENERAL COMPONENTS <-- //
-//Diagonals
-.diagonal-box {
-  margin: 0 auto;
-  width: 70vw;
-  height: 800px;
-  background: linear-gradient(to top right, rgb(255, 230, 0), rgb(255, 200, 50));
-  opacity: 0.2;
-  transform: skew(-20deg);
-  overflow: hidden;
-}
-
 
 //Titles
 .title-box {
