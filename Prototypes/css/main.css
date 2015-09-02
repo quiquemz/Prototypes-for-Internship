@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
 
 #main-container {
   z-index: 1000;
@@ -22,20 +24,24 @@
 
 .header-left-box {
   float: left;
-  width: 50%; }
+  width: 50%;
+  line-height: 2.5; }
 
 .header-right-box {
   float: right;
   width: 50%;
-  margin-top: 5px; }
+  line-height: 2.5;
+  font-size: 15px;
+  font-weight: 200; }
+  .header-right-box span {
+    color: red; }
+  .header-right-box a {
+    color: black; }
+  .header-right-box a:link {
+    text-decoration: none; }
 
 .main-logo {
   height: 25px; }
-
-#hot-link {
-  color: black;
-  font-size: 15px;
-  font-weight: 200; }
 
 .home-container {
   width: 100%;
@@ -53,32 +59,32 @@
 
 .diagonal-box {
   margin: 0 auto;
-  width: 70vw;
+  width: 60vw;
   height: 1000px;
-  background: -webkit-linear-gradient(bottom left, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
-  background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.3));
+  background: -webkit-linear-gradient(bottom left, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.4));
+  background: linear-gradient(to top right, rgba(255, 255, 0, 0.4), rgba(255, 200, 50, 0.4));
   -webkit-transform: skew(-20deg);
       -ms-transform: skew(-20deg);
           transform: skew(-20deg);
   overflow: hidden; }
 
-.audi-logo-box {
+.porsche-logo-box {
   -webkit-transform: skew(20deg);
       -ms-transform: skew(20deg);
           transform: skew(20deg);
   position: relative;
   top: 20%;
   left: 5%; }
-  .audi-logo-box img {
+  .porsche-logo-box img {
     max-width: 800px; }
 
-.audi-logo-img {
+.porsche-logo-img {
   width: 80%; }
 
-.audi-logo-text {
+.porsche-logo-text {
   color: white;
   font-weight: lighter;
-  font-size: 40px; }
+  font-size: 2em; }
 
 .crew-box {
   padding: 50px 0;
@@ -105,7 +111,7 @@
   position: fixed;
   bottom: 60px;
   right: 3.5%;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-animation: backToTop 0.5s infinite;
           animation: backToTop 0.5s infinite;
   -webkit-animation-play-state: paused;
@@ -147,24 +153,68 @@
   vertical-align: middle;
   font-weight: 100; }
 
-a.exit-link {
-  position: absolute;
-  color: black;
-  font-weight: bold; }
-
 .whats-hot-box {
+  position: relative;
+  background-color: rgba(220, 0, 50, 0.9);
+  text-align: center;
   height: 100vh;
   padding-top: 130px;
   margin: 0 auto;
-  color: white;
-  text-align: center;
-  background-color: rgba(220, 0, 50, 0.9);
-  position: relative; }
+  color: white; }
 
 .center-hot-box {
   position: absolute;
-  top: 40%;
+  width: 100%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-40%, -50%);
-      -ms-transform: translate(-40%, -50%);
-          transform: translate(-40%, -50%); }
+  -webkit-transform: translate(-50%, -10%);
+      -ms-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%); }
+  .center-hot-box li {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px; }
+  .center-hot-box li:hover {
+    background-color: black; }
+  .center-hot-box li a {
+    color: white;
+    font-weight: bold; }
+  .center-hot-box a {
+    color: blue;
+    font-weight: bold; }
+  .center-hot-box a:link {
+    text-decoration: none; }
+
+@media (max-width: 992px) {
+  .home-box {
+    border-bottom: 5px solid orange; }
+  .diagonal-box {
+    height: 580px; } }
+
+@media (max-width: 768px) {
+  .home-box {
+    border-bottom: 5px solid red; }
+  .diagonal-box {
+    height: 450px; }
+  .porsche-logo-box {
+    position: relative;
+    top: 30%;
+    left: 15%; } }
+
+@media (max-width: 768px) and (max-width: 480px) {
+  .home-box {
+    border-bottom: 5px solid green; }
+  .diagonal-box {
+    height: 360px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 100%; }
+  .porsche-logo-box {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    position: relative;
+    top: 40%;
+    left: 10%; } }
