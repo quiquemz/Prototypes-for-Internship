@@ -19,7 +19,7 @@
   background-color: white;
   height: 75px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 30px;
   width: 90%; }
 
 .header-left-box {
@@ -32,13 +32,26 @@
   width: 50%;
   line-height: 2.5;
   font-size: 15px;
-  font-weight: 200; }
-  .header-right-box span {
-    color: red; }
+  font-weight: 200;
+  text-align: right; }
   .header-right-box a {
     color: black; }
+  .header-right-box a:hover {
+    color: rgba(226, 0, 50, 0.5); }
   .header-right-box a:link {
     text-decoration: none; }
+  .header-right-box #lang-link, .header-right-box #search-link {
+    color: #a7a7a7; }
+  .header-right-box #lang-link:hover, .header-right-box #search-link:hover {
+    color: rgba(226, 0, 50, 0.5); }
+  .header-right-box #hot-link span, .header-right-box #menu-link span {
+    color: #dc0032; }
+  .header-right-box #hot-link {
+    margin-right: 50px; }
+  .header-right-box #search-link, .header-right-box #lang-link, .header-right-box #menu-link {
+    padding: 0 5px 0 5px; }
+  .header-right-box #menu-link span:hover {
+    color: rgba(226, 0, 50, 0.5); }
 
 .main-logo {
   height: 25px; }
@@ -141,50 +154,84 @@
 .back-to-top-img {
   width: 50px; }
 
-#whats-hot-container {
+.take-over {
   width: 100%;
   position: fixed; }
 
-.whats-hot-header {
-  background-color: white;
-  padding: 20px 10px;
-  position: relative;
-  font-size: 40px;
-  vertical-align: middle;
-  font-weight: 100; }
-
-.whats-hot-box {
+.take-over-box {
   position: relative;
   background-color: rgba(220, 0, 50, 0.9);
   text-align: center;
   height: 100vh;
-  padding-top: 130px;
   margin: 0 auto;
   color: white; }
 
-.center-hot-box {
+.center-box {
   position: absolute;
   width: 100%;
-  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -10%);
-      -ms-transform: translate(-50%, -10%);
-          transform: translate(-50%, -10%); }
-  .center-hot-box li {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .center-box li {
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 30px; }
-  .center-hot-box li:hover {
-    background-color: black; }
-  .center-hot-box li a {
+  .center-box li:hover {
+    background-color: #333; }
+  .center-box li a {
     color: white;
-    font-weight: bold; }
-  .center-hot-box a {
-    color: blue;
-    font-weight: bold; }
-  .center-hot-box a:link {
+    font-weight: 500; }
+  .center-box a:link {
     text-decoration: none; }
+
+.exit-link {
+  position: absolute;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white; }
+
+.exit-link:hover {
+  color: #333; }
+
+.search-container {
+  width: 70%;
+  height: 75px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  position: relative; }
+  .search-container .input-box {
+    float: left;
+    width: 80%;
+    bottom: 0;
+    position: absolute; }
+    .search-container .input-box input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 50px;
+      font-weight: 100;
+      padding: 0 20px 0 20px; }
+  .search-container .search-box {
+    float: right;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 15px; }
+    .search-container .search-box .search-btn {
+      background: none;
+      border: 2.5px solid white;
+      outline: none;
+      width: 100%;
+      font-size: 2em;
+      font-weight: 100;
+      font-style: italic; }
+  .search-container .search-box:hover {
+    color: #dc0032;
+    background: white; }
 
 @media (max-width: 992px) {
   .home-box {
@@ -200,9 +247,13 @@
   .porsche-logo-box {
     position: relative;
     top: 30%;
-    left: 15%; } }
+    left: 15%; }
+  .header-right-box #hot-link {
+    margin-right: 20px; }
+  .header-right-box #search-link, .header-right-box #lang-link, .header-right-box #menu-link {
+    padding: 0 3px 0 3px; } }
 
-@media (max-width: 768px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .home-box {
     border-bottom: 5px solid green; }
   .diagonal-box {

@@ -26,7 +26,16 @@
             <div class="header-right-box">
                 <a href="#" id="hot-link">
                     <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-                    What's hot
+                        What's hot
+                </a>
+                <a href="#" id="search-link">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+                <a href="#" id="lang-link">
+                        EN
+                </a>
+                <a href="#" id="menu-link">
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                 </a>
             </div>
 
@@ -107,13 +116,15 @@
 
 </div>
 
-<div id="whats-hot-container">
-    <div class="whats-hot-header">
-        MENU
-    </div>
 
-    <div class="whats-hot-box">
-        <div class="center-hot-box">
+<div class="take-over" id="menu-take-over">
+    <div class="take-over-box">
+
+        <a href="#" class="exit-link">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </a>
+
+        <div class="center-box">
             <ul>
                 <li><a href="#">SOLUTION</a></li>
                 <li><a href="#">TOOLS</a></li>
@@ -122,15 +133,34 @@
                 <li><a href="#">CAREERS</a></li>
                 <li><a href="#">BLOG</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <a href="#" class="exit-link">EXIT</a>
             </ul>
         </div>
     </div>
-
 </div>
 
+<div class="take-over" id="search-take-over">
+    <div class="take-over-box">
+
+        <a href="#" class="exit-link">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </a>
+
+        <div class="center-box">
+            <div class="search-container">
+                <div class="input-box">
+                    <input type="text"/>
+                </div>
+                <div class="search-box">
+                    <button class="search-btn">SEARCH</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 <script src="js/event-handler.js"></script>
-<script src="js/scroll-magic.js"></script>
 
 </body>
 </html>
